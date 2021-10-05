@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>住所録　編集</title>
+</head>
+
+<body>
+    <header>
+        <h1>住所録　編集</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">一覧</a></li>
+                <li><a href="search.html">検索</a></li>
+                <li><a href="add.html">追加</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+
+            <form action="index.html" method="post">
+                <dl>
+                    <dt>お名前<span class="must">※</span></dt>
+                    <dd>
+                        <input type="text" name="name" value="北野 時司">
+                    </dd>
+                    <dt>フリガナ<span class="must">※</span></dt>
+                    <dd>
+                        <input type="text" name="kana" value="キタノ トキジ">
+                    </dd>
+                    <dt>性別</dt>
+                    <dd>
+                        <label><input type="radio" name="sex" value="男" checked>男</label>
+                        <label><input type="radio" name="sex" value="女">女</label>
+                    </dd>
+                    <dt>Tel</dt>
+                    <dd>
+                        <input type="text" name="tel" value="090-5708-5330">
+                    </dd>
+                    <dt>メールアドレス</dt>
+                    <dd>
+                        <input type="email" name="email" value="kitano7626@example.ad.jp">
+                    </dd>
+                    <dt>郵便番号</dt>
+                    <dd>
+                        <input type="text" name="postal" value="737-0034">
+                    </dd>
+                    <dt>住所</dt>
+                    <dd>
+                        <input type="text" name="address" value="広島県呉市溝路町7-11-4 フリード溝路町 14F">
+                    </dd>
+                </dl>
+                <p class="submit"><input type="submit" name="submit" value="確定"></p>
+            </form>
+
+        </main>
+    </div>
+</body>
+
+</html>
